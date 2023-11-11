@@ -17,7 +17,7 @@ p {font-size: 1em;}
 ul {list-style: none;}
 
 button {
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
@@ -38,13 +38,13 @@ button:hover {
 header {
     background-color: rgb(52, 85, 193);
     text-align: end;
+    
 }
-
 header .logo {
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color: rgb(220, 149, 62);
+    color:#fff;
     font-size: 1.8em;
 }
 header .container {
@@ -62,7 +62,7 @@ header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
-    color: rgb(192, 192, 192);
+    color: black;
 }
 header a:hover{
     color: rgb(246, 135, 15);
@@ -97,7 +97,7 @@ header a:hover{
     display: flex;
     text-align: center;
     background-color: rgb(52, 85, 193);
-    color: rgb(233, 233, 233);
+    color: black;
 }
 #sobre-mi .container {
     text-align: center;
@@ -107,68 +107,85 @@ header a:hover{
     color:rgb(220, 149, 62);
 }
 #proyectos{
-    background-color: rgb(30,30,30);
+    background-color: rgb(255, 255, 255);
     color: #fff;
     text-align: center;
 }
 #proyectos .container{
     padding: 100px 12px;
 }
-#proyectos h3{
-    margin-top: 0;
-    font-size: 1.7em;
+#proyectos h1{
+    margin-top: 0; 
+    margin-bottom: 60px;
+    font-size: 2em;
+    color: rgb(220, 149, 62);
 }
 
-#proyectos .cartas{
+#proyectos .col-cartas{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 12px;
+    padding: 60px;
+    margin: 20px;
+    border-radius: 15px;
 }
 
-#proyectos .skills{
-    font-size: 1em;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px; 
-    background-color: rgb(30,30,30);
-}
-.cartas:first-child{
+.col-cartas:first-child{
     background-image:linear-gradient(
         0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
     )
-    ,url(img/prog-img.jpeg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 50px;
-    margin: 12px;
+    ,url(img/br-logo.jpeg);
 }
 
-.cartas:nth-child(2){
+.col-cartas:nth-child(2){
     background-image:linear-gradient(
         0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),url(img/js-doc.png);
+}
+
+.col-cartas:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),url(img/mz-1.jpeg);
+}
+#skills{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
     ),url(img/prog-img1.jpeg);
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
-    padding: 50px;
-    margin: 12px;
+    padding: 60px;
+    margin: 20px;
 }
-
-.cartas:nth-child(3){
-    background-image:linear-gradient(
-        0deg,
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)
-    ),url(img/fondo-1.jpeg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 50px;
-    margin: 12px;
+#skills h1{
+    font-size: 2em;
+    text-align: center;
+    justify-content: center;
+    color: rgb(196, 122, 31);
+}
+#skills h3 {
+    text-align: left;
+    color: rgb(196, 122,31);
+    font-size: 1.7em;
+}
+#skills span{
+    margin: 4px;
+    padding: 3px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(28, 160, 138, 0.6);
+    color: #fff;
+}
+#skills ul li{
+    color: #fff;
+    margin: 10px;
+    padding: 3px;
+    text-align: start;
+    justify-content: center;
 }
