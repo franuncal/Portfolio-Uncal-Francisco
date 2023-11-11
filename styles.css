@@ -10,6 +10,7 @@ ul {list-style: none;}
 body{
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
 }
 
 button {
@@ -19,9 +20,84 @@ button {
     border-radius: 10px;
     border: 1px solid rgba(0,0,0,0.5);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    background-color: rgba(31, 31, 215, 0.809);
+    background-color: rgb(196, 122, 31);
     color: #fff;
 }
 button:hover {
-    background-color: rgb(16, 16, 236);
+    background-color: rgb(246, 135, 15);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(123, 62, 180);
+    text-align: end;
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(196, 122, 31);
+    font-size: 1.8em;
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header, #nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(196, 122, 31);
+}
+header a:hover{
+    color: rgb(246, 135, 15);
+}
+#fran {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: #fff;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    ),url(img/fondo-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#fran h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.8em;
+}
+#fran h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#sobre-mi{
+
+}
+#sobre-mi .container {
+    text-align: center;
+    padding: 150px 12px;
+}
+#sobre-mi h1{
+    color: rgb(196, 122, 31);
 }
