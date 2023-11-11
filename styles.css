@@ -1,17 +1,20 @@
 *{
     box-sizing: border-box;
 }
-h1 {font-size: 2em;}
-h2 {font-size: 1.5em;}
-h3 {font-size: 1.3em;}
-p {font-size: 1em;}
-ul {list-style: none;}
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #000;
 }
+
+h1 {font-size: 2em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.3em;}
+p {font-size: 1em;}
+ul {list-style: none;}
 
 button {
     font-size: 1em;
@@ -76,7 +79,7 @@ header a:hover{
         0deg,
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.4)
-    ),url(img/fondo-1.jpeg);
+    ),url(img/prog-img.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -92,12 +95,71 @@ header a:hover{
 }
 
 #sobre-mi{
-
+    display: flex;
+    text-align: center;
 }
 #sobre-mi .container {
     text-align: center;
-    padding: 150px 12px;
+    padding: 200px 12px;
 }
 #sobre-mi h1{
     color: rgb(196, 122, 31);
+}
+#proyectos{
+    background-color: rgb(30,30,30);
+    color: #fff;
+    text-align: center;
+}
+#proyectos .container{
+    padding: 100px 12px;
+}
+#proyectos h3{
+    margin-top: 0;
+    font-size: 1.7em;
+}
+#proyectos .cartas{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 12px;
+}
+
+.cartas:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(img/prog-img.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 12px;
+}
+
+.cartas:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),url(img/prog-img1.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 12px;
+}
+
+.cartas:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),url(img/fondo-1.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin: 12px;
 }
